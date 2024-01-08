@@ -1,7 +1,7 @@
 import argparse
 import asyncio
 import logging
-import server
+from game import server
 
 
 def main():
