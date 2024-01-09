@@ -17,6 +17,9 @@ jobs:
 
     - name: Install dependencies
       run: pip install --no-cache-dir -r requirements.txt
+    
+    - name: Install dev dependencies
+      run: pip install --no-cache-dir -r requirements-dev.txt
 
     - name: Lint
       run: make lint
