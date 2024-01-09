@@ -1,6 +1,6 @@
-import actions
-import config
-from player import Player
+from rose.common import actions
+from rose.game import config
+from rose.game.player import Player
 
 
 def test_player_initialization():

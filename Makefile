@@ -1,5 +1,7 @@
 .PHONY: lint test lint-fix code-quality run build-image run-image clean
 
+SRC_DIR = .
+
 IMAGE_NAME ?= quay.io/rose/rose-game-engine
 PORT ?= 8880
 
@@ -29,7 +31,7 @@ test:
 
 run:
 	@echo "Running driver logic server ..."
-	python engine/main.py --port $(PORT) --drivers $(DRIVERS)
+	PYTHONPATH=$(SRC_DIR):$$PYTHONPATH python rose/main.py --port $(PORT) --drivers $(DRIVERS)
 
 build-image:
 	@echo "Building container image ..."

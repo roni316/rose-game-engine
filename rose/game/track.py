@@ -1,7 +1,7 @@
 import random
 
-import config
-import obstacles
+from rose.game import config
+from rose.common import obstacles
 
 
 class Track(object):

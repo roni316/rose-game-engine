@@ -3,12 +3,12 @@ import logging
 import random
 import aiohttp
 
-import config
+from rose.game import config
 
-import score
-import net
-from player import Player
-from track import Track
+from rose.game import score
+from rose.game import net
+from rose.game.player import Player
+from rose.game.track import Track
 
 log = logging.getLogger("logic")
 

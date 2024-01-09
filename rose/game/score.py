@@ -1,9 +1,9 @@
 """ Score logic """
 import logging
 
-import config
-import actions
-import obstacles
+from rose.game import config
+from rose.common import actions
+from rose.common import obstacles
 
 log = logging.getLogger("score")
 

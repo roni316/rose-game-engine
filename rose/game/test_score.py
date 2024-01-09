@@ -1,9 +1,9 @@
-import actions
-import config
-import obstacles
-import track
-import player
-import score
+from rose.common import actions
+from rose.game import config
+from rose.common import obstacles
+from rose.game import track
+from rose.game import player
+from rose.game import score
 import pytest
 
 

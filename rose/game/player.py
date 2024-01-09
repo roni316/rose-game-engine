@@ -1,5 +1,5 @@
-import config
-import actions
+from rose.game import config
+from rose.common import actions
 
 
 class Player(object):
