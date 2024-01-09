@@ -3,8 +3,8 @@ import json
 import aiohttp
 from aiohttp import web
 
-from rose.game import config
-from rose.game import logic
+from rose.engine import config
+from rose.engine import logic
 
 # Global active_websockets
 # IMPORTANT - shared with game loop in game.py

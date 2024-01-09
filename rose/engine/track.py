@@ -1,6 +1,6 @@
 import random
 
-from rose.game import config
+from rose.engine import config
 from rose.common import obstacles
 
 

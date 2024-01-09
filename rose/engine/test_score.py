@@ -1,9 +1,9 @@
 from rose.common import actions
-from rose.game import config
+from rose.engine import config
 from rose.common import obstacles
-from rose.game import track
-from rose.game import player
-from rose.game import score
+from rose.engine import track
+from rose.engine import player
+from rose.engine import score
 import pytest
 
 
