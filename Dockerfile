@@ -13,6 +13,15 @@ FROM build
 WORKDIR /app
 COPY . /app
 
-# Set the command to run the main.py file when the container launches
-ENTRYPOINT ["python", "engine/main.py", "--listen", "0.0.0.0"]
-CMD [ "--track", "same" ]
+# Add the rose client package to the python path
+ENV PYTHONPATH "${PYTHONPATH}:/app"
+
+# Default values for environment variables
+ENV TRACK same
+ENV PORT 8880
+
+# Inform Docker that the container listens on port 8880
+EXPOSE 8880
+
+# Define the command to run your app using CMD which defines your runtime
+CMD ["sh", "-c", "python rose/main.py --listen 0.0.0.0 --track ${TRACK} --port ${PORT}"]

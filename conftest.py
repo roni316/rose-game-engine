@@ -1,4 +1,4 @@
 # conftest.py
 import sys
 
-sys.path.append("engine/game")
+sys.path.append(".")
