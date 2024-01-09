@@ -1,7 +1,7 @@
 import argparse
 import asyncio
 import logging
-from rose.game import server
+from rose.engine import server
 
 
 def main():
