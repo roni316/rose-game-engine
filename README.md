@@ -24,7 +24,7 @@ Game engine | https://github.com/RedHat-Israel/rose-game-engine |
 Game web based user interface | https://github.com/RedHat-Israel/rose-game-web-ui |
 Game car driving module | https://github.com/RedHat-Israel/rose-game-ai |
 
-## Running the game engine loally
+## Running the game engine locally
 
 Clone this repository.
 
