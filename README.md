@@ -53,6 +53,9 @@ kubectl apply -f https://raw.githubusercontent.com/RedHat-Israel/rose-game-engin
 # Get the user interface node port
 kubectl get svc -n rose rose-game-web-ui
 
+# On openshift expose the user interface route
+#oc expose svc/rose-game-web-ui -n rose --port=8080
+
 # Car driving modules will be available using internal service URL
 # module intrenal URL example: http://rose-game-ai-reference.rose.svc.cluster.local:8081
 ```
