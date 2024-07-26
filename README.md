@@ -37,7 +37,7 @@ pip install -r requirements.txt
 pip install -r requirements-dev.txt
 
 # Run the game engine server
-make run
+python main.py
 ```
 
 ## Running ROSE game on kubernetes cluster
