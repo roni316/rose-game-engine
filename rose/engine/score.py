@@ -1,4 +1,5 @@
 """ Score logic """
+
 import logging
 
 from rose.engine import config
