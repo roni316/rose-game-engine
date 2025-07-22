@@ -18,6 +18,7 @@ async def initialize_game(state):
     state["reset"] = None
     state["running"] = 0
     state["timeleft"] = config.game_duration
+    state["same map"] = None
     track = initialize_track(state["track_type"] != "same")
     players = await initialize_players(state["drivers"])
     return track, players

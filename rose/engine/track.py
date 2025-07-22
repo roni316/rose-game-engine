@@ -49,6 +49,8 @@ class Track(object):
             [obstacles.NONE] * config.matrix_width for x in range(config.matrix_height)
         ]
 
+
+
     # Private
 
     def _generate_row(self):
